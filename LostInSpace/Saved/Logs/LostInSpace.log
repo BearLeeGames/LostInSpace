@@ -1,4 +1,4 @@
-﻿Log file open, 11/19/19 02:55:19
+﻿Log file open, 11/19/19 02:57:35
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -9,7 +9,7 @@ LogConsoleResponse: Display: Failed to find resolution value strings in scalabil
 LogInit: Display: Running engine for game: LostInSpace
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.057518
+LogStats: Stats thread started at 0.056897
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -8:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -165,450 +165,1413 @@ LogInit: Presizing for max 25165824 objects, including 0 objects not considered 
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Engine.ini]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Engine.ini]
-[2019.11.19-10.55.19:377][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Engine.ini]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Engine.ini]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2019.11.19-10.55.19:377][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Engine.ini]
-[2019.11.19-10.55.19:377][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Engine.ini]
-[2019.11.19-10.55.19:382][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2019.11.19-10.55.19:382][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2019.11.19-10.55.19:383][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2019.11.19-10.55.19:383][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2019.11.19-10.55.19:383][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2019.11.19-10.55.19:383][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2019.11.19-10.55.19:383][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2019.11.19-10.55.19:383][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2019.11.19-10.55.19:383][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2019.11.19-10.55.19:383][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2019.11.19-10.55.19:383][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2019.11.19-10.55.19:383][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:383][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.11.19-10.55.19:383][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.11.19-10.55.19:383][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:383][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2019.11.19-10.55.19:383][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2019.11.19-10.55.19:383][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2019.11.19-10.55.19:383][  0]LogInit: Selected Device Profile: [Windows]
-[2019.11.19-10.55.19:383][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2019.11.19-10.55.19:384][  0]LogHAL: Display: Platform has ~ 16 GB [17118527488 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2019.11.19-10.55.19:384][  0]LogInit: Going up to parent DeviceProfile []
-[2019.11.19-10.55.19:384][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:384][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.11.19-10.55.19:384][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.11.19-10.55.19:384][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:384][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2019.11.19-10.55.19:385][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2019.11.19-10.55.19:386][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2019.11.19-10.55.19:386][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2019.11.19-10.55.19:386][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Engine.ini]
-[2019.11.19-10.55.19:386][  0]LogInit: Computer: DESKTOP-OL4DFGJ
-[2019.11.19-10.55.19:386][  0]LogInit: User: Elton
-[2019.11.19-10.55.19:386][  0]LogInit: CPU Page size=4096, Cores=4
-[2019.11.19-10.55.19:386][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2019.11.19-10.55.19:386][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2019.11.19-10.55.19:386][  0]LogMemory: Platform Memory Stats for Windows
-[2019.11.19-10.55.19:386][  0]LogMemory: Process Physical Memory: 105.45 MB used, 105.45 MB peak
-[2019.11.19-10.55.19:386][  0]LogMemory: Process Virtual Memory: 100.89 MB used, 100.89 MB peak
-[2019.11.19-10.55.19:386][  0]LogMemory: Physical Memory: 8464.02 MB used,  7861.48 MB free, 16325.50 MB total
-[2019.11.19-10.55.19:386][  0]LogMemory: Virtual Memory: 5137.45 MB used,  134212592.00 MB free, 134217728.00 MB total
-[2019.11.19-10.55.19:821][  0]LogWindows: WindowsPlatformFeatures enabled
-[2019.11.19-10.55.19:833][  0]LogInit: Using OS detected language (en-US).
-[2019.11.19-10.55.19:833][  0]LogInit: Using OS detected locale (en-US).
-[2019.11.19-10.55.19:833][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2019.11.19-10.55.19:957][  0]LogInit: Setting process to per monitor DPI aware
-[2019.11.19-10.55.19:979][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2019.11.19-10.55.19:979][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2019.11.19-10.55.20:070][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.11.19-10.55.20:070][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
-[2019.11.19-10.55.20:070][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
-[2019.11.19-10.55.20:070][  0]LogD3D11RHI: D3D11 adapters:
-[2019.11.19-10.55.20:119][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
-[2019.11.19-10.55.20:119][  0]LogD3D11RHI:       8088/0/8162 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2019.11.19-10.55.20:120][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2019.11.19-10.55.20:120][  0]LogD3D11RHI:       0/0/8162 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2019.11.19-10.55.20:120][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2019.11.19-10.55.20:128][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2019.11.19-10.55.20:128][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
-[2019.11.19-10.55.20:128][  0]LogWindows: EnumDisplayDevices:
-[2019.11.19-10.55.20:128][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
-[2019.11.19-10.55.20:128][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
-[2019.11.19-10.55.20:128][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
-[2019.11.19-10.55.20:129][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
-[2019.11.19-10.55.20:129][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2019.11.19-10.55.20:129][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
-[2019.11.19-10.55.20:129][  0]LogD3D11RHI:   Driver Version: 441.12 (internal:26.21.14.4112, unified:441.12)
-[2019.11.19-10.55.20:129][  0]LogD3D11RHI:      Driver Date: 10-24-2019
-[2019.11.19-10.55.20:129][  0]LogRHI: Texture pool is 5661 MB (70% of 8088 MB)
-[2019.11.19-10.55.20:163][  0]LogD3D11RHI: RHI has support for 64 bit atomics
-[2019.11.19-10.55.20:163][  0]LogD3D11RHI: Async texture creation enabled
-[2019.11.19-10.55.20:208][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2019.11.19-10.55.20:481][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATC'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1a'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTC'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATCClient'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1Client'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1aClient'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTCClient'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
-[2019.11.19-10.55.20:513][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
-[2019.11.19-10.55.20:527][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
-[2019.11.19-10.55.20:527][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
-[2019.11.19-10.55.20:533][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
-[2019.11.19-10.55.20:540][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
-[2019.11.19-10.55.20:547][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
-[2019.11.19-10.55.20:552][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
-[2019.11.19-10.55.20:558][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
-[2019.11.19-10.55.20:563][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
-[2019.11.19-10.55.20:579][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
-[2019.11.19-10.55.20:580][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
-[2019.11.19-10.55.20:588][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
-[2019.11.19-10.55.20:589][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
-[2019.11.19-10.55.20:594][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2019.11.19-10.55.20:601][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2019.11.19-10.55.20:606][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2019.11.19-10.55.20:611][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2019.11.19-10.55.20:611][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2019.11.19-10.55.20:613][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2019.11.19-10.55.20:628][  0]LogShaderCompilers: Guid format shader working directory is 10 characters bigger than the processId version (../../../../LostInSpace/LostInSpace/Intermediate/Shaders/WorkingDirectory/13252/).
-[2019.11.19-10.55.20:628][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Elton/AppData/Local/Temp/UnrealShaderWorkingDir/6593853B47E6BE648CC10BA07A1242E9/'.
-[2019.11.19-10.55.20:628][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2019.11.19-10.55.20:628][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2019.11.19-10.55.20:628][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2019.11.19-10.55.21:201][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2019.11.19-10.55.21:255][  0]LogDerivedDataCache: Loaded boot cache 0.05s 94MB C:/Users/Elton/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
-[2019.11.19-10.55.21:255][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Elton/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc
-[2019.11.19-10.55.21:255][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../LostInSpace/LostInSpace/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2019.11.19-10.55.21:255][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2019.11.19-10.55.21:255][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../LostInSpace/LostInSpace/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.11.19-10.55.21:255][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2019.11.19-10.55.21:263][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2019.11.19-10.55.21:263][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.11.19-10.55.21:263][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2019.11.19-10.55.21:264][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Elton/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2019.11.19-10.55.21:264][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2019.11.19-10.55.21:264][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2019.11.19-10.55.21:283][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2019.11.19-10.55.21:285][  0]LogSlate: Using FreeType 2.10.0
-[2019.11.19-10.55.21:285][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2019.11.19-10.55.21:320][  0]LogAssetRegistry: FAssetRegistry took 0.0016 seconds to start up
-[2019.11.19-10.55.21:552][  0]LogInit: Selected Device Profile: [Windows]
-[2019.11.19-10.55.21:666][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2019.11.19-10.55.21:666][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2019.11.19-10.55.21:666][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2019.11.19-10.55.21:666][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2019.11.19-10.55.21:666][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2019.11.19-10.55.21:676][  0]LogNetVersion: LostInSpace 1.0.0, NetCL: 10091930, EngineNetVer: 13, GameNetVer: 0 (Checksum: 2230324544)
-[2019.11.19-10.55.22:416][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 1 prioritized culture(s) in 0.034319 seconds
-[2019.11.19-10.55.22:423][  0]LogUObjectArray: 46734 objects as part of root set at end of initial load.
-[2019.11.19-10.55.22:423][  0]LogUObjectAllocator: 8134904 out of 0 bytes used by permanent object pool.
-[2019.11.19-10.55.22:423][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2019.11.19-10.55.22:702][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2019.11.19-10.55.22:703][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2019.11.19-10.55.22:736][  0]SourceControl: Source control is disabled
-[2019.11.19-10.55.22:736][  0]SourceControl: Source control is disabled
-[2019.11.19-10.55.22:737][  0]SourceControl: Source control is disabled
-[2019.11.19-10.55.22:737][  0]SourceControl: Source control is disabled
-[2019.11.19-10.55.22:738][  0]SourceControl: Source control is disabled
-[2019.11.19-10.55.22:822][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2019.11.19-10.55.22:829][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2019.11.19-10.55.22:829][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2019.11.19-10.55.22:891][  0]LogOcInput: OculusInput pre-init called
-[2019.11.19-10.55.22:896][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
-[2019.11.19-10.55.22:896][  0]LogWindows: File 'OVRPlugin.dll' does not exist
-[2019.11.19-10.55.23:309][  0]LogEngine: Initializing Engine...
-[2019.11.19-10.55.23:310][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2019.11.19-10.55.23:311][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
-[2019.11.19-10.55.23:564][  0]LogInit: Initializing FReadOnlyCVARCache
-[2019.11.19-10.55.23:569][  0]LogAIModule: Creating AISystem for world Untitled
-[2019.11.19-10.55.23:584][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2019.11.19-10.55.23:584][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2019.11.19-10.55.23:584][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2019.11.19-10.55.23:584][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2019.11.19-10.55.23:584][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2019.11.19-10.55.23:584][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2019.11.19-10.55.23:584][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2019.11.19-10.55.23:584][  0]LogAudio: Display: AudioDevice MaxSources: 32
-[2019.11.19-10.55.23:584][  0]LogAudio: Display: Using built-in audio occlusion.
-[2019.11.19-10.55.23:584][  0]LogAudioMixer: Display: Initializing audio mixer.
-[2019.11.19-10.55.23:688][  0]LogAudioMixer: Display: Audio Device Output Speaker Info:
-[2019.11.19-10.55.23:688][  0]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
-[2019.11.19-10.55.23:688][  0]LogAudioMixer: Display: Is Default: Yes
-[2019.11.19-10.55.23:688][  0]LogAudioMixer: Display: Sample Rate: 48000
-[2019.11.19-10.55.23:688][  0]LogAudioMixer: Display: Channel Count Used: 8
-[2019.11.19-10.55.23:688][  0]LogAudioMixer: Display: Device Channel Count: 8
-[2019.11.19-10.55.23:688][  0]LogAudioMixer: Display: Channel Order:
-[2019.11.19-10.55.23:688][  0]LogAudioMixer: Display: 0: FrontLeft
-[2019.11.19-10.55.23:688][  0]LogAudioMixer: Display: 1: FrontRight
-[2019.11.19-10.55.23:688][  0]LogAudioMixer: Display: 2: FrontCenter
-[2019.11.19-10.55.23:688][  0]LogAudioMixer: Display: 3: LowFrequency
-[2019.11.19-10.55.23:688][  0]LogAudioMixer: Display: 4: BackLeft
-[2019.11.19-10.55.23:688][  0]LogAudioMixer: Display: 5: BackRight
-[2019.11.19-10.55.23:688][  0]LogAudioMixer: Display: 6: SideLeft
-[2019.11.19-10.55.23:688][  0]LogAudioMixer: Display: 7: SideRight
-[2019.11.19-10.55.23:748][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
-[2019.11.19-10.55.23:752][  0]LogInit: FAudioDevice initialized.
-[2019.11.19-10.55.23:752][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2019.11.19-10.55.23:885][  0]LogDerivedDataCache: Saved boot cache 0.13s 94MB C:/Users/Elton/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
-[2019.11.19-10.55.23:890][  0]LogInit: Texture streaming: Enabled
-[2019.11.19-10.55.23:897][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2019.11.19-10.55.23:897][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
-[2019.11.19-10.55.23:898][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
-[2019.11.19-10.55.23:937][  0]LogInit: Transaction tracking system initialized
-[2019.11.19-10.55.23:943][  0]BlueprintLog: New page: Editor Load
-[2019.11.19-10.55.23:964][  0]LocalizationService: Localization service is disabled
-[2019.11.19-10.55.24:159][  0]LogFileCache: Scanning file cache for directory 'D:/LostInSpace/LostInSpace/Content/' took 0.00s
-[2019.11.19-10.55.24:159][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2019.11.19-10.55.24:159][  0]LogCook: Display: Mobile HDR setting 1
-[2019.11.19-10.55.24:233][  0]SourceControl: Source control is disabled
-[2019.11.19-10.55.24:233][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
-[2019.11.19-10.55.24:233][  0]LightingResults: New page: Lighting Build
-[2019.11.19-10.55.24:234][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
-[2019.11.19-10.55.24:234][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2019.11.19-10.55.24:234][  0]MapCheck: New page: Map Check
-[2019.11.19-10.55.24:234][  0]LightingResults: New page: Lighting Build
-[2019.11.19-10.55.24:254][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.29ms
-[2019.11.19-10.55.24:313][  0]LogAIModule: Creating AISystem for world Untitled_1
-[2019.11.19-10.55.24:315][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2019.11.19-10.55.24:336][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.53ms
-[2019.11.19-10.55.24:336][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2019.11.19-10.55.24:336][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.071ms to complete.
-[2019.11.19-10.55.24:336][  0]LogFileHelpers: Loading map 'Template_Default' took 0.104
-[2019.11.19-10.55.24:444][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.11.19-10.55.24:450][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.11.19-10.55.24:455][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.11.19-10.55.24:459][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.11.19-10.55.24:465][  0]LogCollectionManager: Loaded 0 collections in 0.000542 seconds
-[2019.11.19-10.55.24:474][  0]LogFileCache: Scanning file cache for directory 'D:/LostInSpace/LostInSpace/Saved/Collections/' took 0.00s
-[2019.11.19-10.55.24:475][  0]LogFileCache: Scanning file cache for directory 'D:/LostInSpace/LostInSpace/Content/Developers/Elton/Collections/' took 0.00s
-[2019.11.19-10.55.24:475][  0]LogFileCache: Scanning file cache for directory 'D:/LostInSpace/LostInSpace/Content/Collections/' took 0.00s
-[2019.11.19-10.55.24:475][  0]LogContentBrowser: Native class hierarchy populated in 0.0064 seconds. Added 3075 classes and 738 folders.
-[2019.11.19-10.55.24:476][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2019.11.19-10.55.24:499][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2019.11.19-10.55.24:502][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 2 classes and 3 folders.
-[2019.11.19-10.55.24:575][  0]LogSlate: Took 0.000104 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2019.11.19-10.55.24:576][  0]LogSlate: Took 0.000111 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2019.11.19-10.55.24:580][  0]LogSlate: Took 0.000150 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2019.11.19-10.55.24:640][  0]LogRenderer: Reallocating scene render targets to support 1616x808 Format 10 NumSamples 1 (Frame:1).
-[2019.11.19-10.55.24:757][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2019.11.19-10.55.24:757][  0]LogLoad: (Engine Initialization) Total time: 6.05 seconds
-[2019.11.19-10.55.24:757][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2019.11.19-10.55.24:793][  0]LogAssetRegistry: Asset discovery search completed in 3.4727 seconds
-[2019.11.19-10.55.24:797][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000007 seconds (updated 0 objects)
-[2019.11.19-10.55.24:798][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2019.11.19-10.55.24:831][  1]LogFileCache: Retrieving MD5 hashes for directory 'D:/LostInSpace/LostInSpace/Content/' took 0.06s
+[2019.11.19-10.57.35:848][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2019.11.19-10.57.35:848][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2019.11.19-10.57.35:848][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Engine.ini]
+[2019.11.19-10.57.35:848][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.11.19-10.57.35:848][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Engine.ini]
+[2019.11.19-10.57.35:849][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Engine.ini]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Engine.ini]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.11.19-10.57.35:849][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Engine.ini]
+[2019.11.19-10.57.35:849][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Engine.ini]
+[2019.11.19-10.57.35:853][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2019.11.19-10.57.35:853][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2019.11.19-10.57.35:854][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2019.11.19-10.57.35:854][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2019.11.19-10.57.35:854][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2019.11.19-10.57.35:854][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:854][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.11.19-10.57.35:854][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.11.19-10.57.35:854][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:854][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2019.11.19-10.57.35:854][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2019.11.19-10.57.35:854][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2019.11.19-10.57.35:854][  0]LogInit: Selected Device Profile: [Windows]
+[2019.11.19-10.57.35:854][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.11.19-10.57.35:855][  0]LogHAL: Display: Platform has ~ 16 GB [17118527488 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.11.19-10.57.35:855][  0]LogInit: Going up to parent DeviceProfile []
+[2019.11.19-10.57.35:855][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:855][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.11.19-10.57.35:855][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.11.19-10.57.35:855][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:855][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2019.11.19-10.57.35:855][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:855][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.11.19-10.57.35:855][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.11.19-10.57.35:855][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.11.19-10.57.35:855][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.11.19-10.57.35:855][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.11.19-10.57.35:855][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.11.19-10.57.35:855][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.11.19-10.57.35:855][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.11.19-10.57.35:855][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.11.19-10.57.35:855][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.11.19-10.57.35:855][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Scalability.ini]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.11.19-10.57.35:856][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2019.11.19-10.57.35:857][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/LostInSpace/LostInSpace/Saved/Config/Windows/Engine.ini]
+[2019.11.19-10.57.35:857][  0]LogInit: Computer: DESKTOP-OL4DFGJ
+[2019.11.19-10.57.35:857][  0]LogInit: User: Elton
+[2019.11.19-10.57.35:857][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.11.19-10.57.35:857][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2019.11.19-10.57.35:857][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2019.11.19-10.57.35:857][  0]LogMemory: Platform Memory Stats for Windows
+[2019.11.19-10.57.35:857][  0]LogMemory: Process Physical Memory: 105.41 MB used, 105.41 MB peak
+[2019.11.19-10.57.35:857][  0]LogMemory: Process Virtual Memory: 100.70 MB used, 100.70 MB peak
+[2019.11.19-10.57.35:857][  0]LogMemory: Physical Memory: 8317.99 MB used,  8007.51 MB free, 16325.50 MB total
+[2019.11.19-10.57.35:857][  0]LogMemory: Virtual Memory: 5137.45 MB used,  134212592.00 MB free, 134217728.00 MB total
+[2019.11.19-10.57.36:283][  0]LogWindows: WindowsPlatformFeatures enabled
+[2019.11.19-10.57.36:295][  0]LogInit: Using OS detected language (en-US).
+[2019.11.19-10.57.36:295][  0]LogInit: Using OS detected locale (en-US).
+[2019.11.19-10.57.36:296][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2019.11.19-10.57.36:432][  0]LogInit: Setting process to per monitor DPI aware
+[2019.11.19-10.57.36:455][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.11.19-10.57.36:455][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.11.19-10.57.36:540][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.11.19-10.57.36:540][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2019.11.19-10.57.36:540][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2019.11.19-10.57.36:540][  0]LogD3D11RHI: D3D11 adapters:
+[2019.11.19-10.57.36:587][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
+[2019.11.19-10.57.36:587][  0]LogD3D11RHI:       8088/0/8162 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2019.11.19-10.57.36:588][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.11.19-10.57.36:588][  0]LogD3D11RHI:       0/0/8162 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.11.19-10.57.36:588][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.11.19-10.57.36:595][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.11.19-10.57.36:595][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
+[2019.11.19-10.57.36:595][  0]LogWindows: EnumDisplayDevices:
+[2019.11.19-10.57.36:596][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
+[2019.11.19-10.57.36:596][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
+[2019.11.19-10.57.36:596][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2019.11.19-10.57.36:596][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2019.11.19-10.57.36:596][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2019.11.19-10.57.36:596][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
+[2019.11.19-10.57.36:596][  0]LogD3D11RHI:   Driver Version: 441.12 (internal:26.21.14.4112, unified:441.12)
+[2019.11.19-10.57.36:596][  0]LogD3D11RHI:      Driver Date: 10-24-2019
+[2019.11.19-10.57.36:596][  0]LogRHI: Texture pool is 5661 MB (70% of 8088 MB)
+[2019.11.19-10.57.36:628][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2019.11.19-10.57.36:628][  0]LogD3D11RHI: Async texture creation enabled
+[2019.11.19-10.57.36:666][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2019.11.19-10.57.36:895][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATC'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1a'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTC'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ATCClient'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1Client'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC1aClient'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_PVRTCClient'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2019.11.19-10.57.36:920][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2019.11.19-10.57.36:935][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2019.11.19-10.57.36:935][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2019.11.19-10.57.36:940][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2019.11.19-10.57.36:946][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2019.11.19-10.57.36:951][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2019.11.19-10.57.36:956][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2019.11.19-10.57.36:961][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2019.11.19-10.57.36:967][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2019.11.19-10.57.36:985][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2019.11.19-10.57.36:985][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2019.11.19-10.57.36:994][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2019.11.19-10.57.36:994][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2019.11.19-10.57.36:999][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2019.11.19-10.57.37:004][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2019.11.19-10.57.37:009][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2019.11.19-10.57.37:014][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2019.11.19-10.57.37:014][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2019.11.19-10.57.37:016][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2019.11.19-10.57.37:029][  0]LogShaderCompilers: Guid format shader working directory is 10 characters bigger than the processId version (../../../../LostInSpace/LostInSpace/Intermediate/Shaders/WorkingDirectory/12096/).
+[2019.11.19-10.57.37:029][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Elton/AppData/Local/Temp/UnrealShaderWorkingDir/6D6E7087484F1CFB4067548BF2014674/'.
+[2019.11.19-10.57.37:029][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2019.11.19-10.57.37:029][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2019.11.19-10.57.37:029][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2019.11.19-10.57.37:565][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2019.11.19-10.57.37:614][  0]LogDerivedDataCache: Loaded boot cache 0.05s 94MB C:/Users/Elton/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2019.11.19-10.57.37:614][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Elton/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc
+[2019.11.19-10.57.37:614][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../LostInSpace/LostInSpace/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2019.11.19-10.57.37:614][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2019.11.19-10.57.37:614][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../LostInSpace/LostInSpace/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.11.19-10.57.37:614][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2019.11.19-10.57.37:621][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2019.11.19-10.57.37:621][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2019.11.19-10.57.37:621][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2019.11.19-10.57.37:622][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Elton/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2019.11.19-10.57.37:622][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2019.11.19-10.57.37:622][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2019.11.19-10.57.37:642][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.11.19-10.57.37:645][  0]LogSlate: Using FreeType 2.10.0
+[2019.11.19-10.57.37:645][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.11.19-10.57.37:681][  0]LogAssetRegistry: FAssetRegistry took 0.0018 seconds to start up
+[2019.11.19-10.57.37:896][  0]LogInit: Selected Device Profile: [Windows]
+[2019.11.19-10.57.38:007][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2019.11.19-10.57.38:007][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2019.11.19-10.57.38:007][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2019.11.19-10.57.38:007][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2019.11.19-10.57.38:007][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2019.11.19-10.57.38:017][  0]LogNetVersion: LostInSpace 1.0.0, NetCL: 10091930, EngineNetVer: 13, GameNetVer: 0 (Checksum: 2230324544)
+[2019.11.19-10.57.38:737][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 1 prioritized culture(s) in 0.032519 seconds
+[2019.11.19-10.57.38:743][  0]LogUObjectArray: 46734 objects as part of root set at end of initial load.
+[2019.11.19-10.57.38:743][  0]LogUObjectAllocator: 8134904 out of 0 bytes used by permanent object pool.
+[2019.11.19-10.57.38:743][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.11.19-10.57.39:012][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2019.11.19-10.57.39:014][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2019.11.19-10.57.39:046][  0]SourceControl: Source control is disabled
+[2019.11.19-10.57.39:046][  0]SourceControl: Source control is disabled
+[2019.11.19-10.57.39:047][  0]SourceControl: Source control is disabled
+[2019.11.19-10.57.39:047][  0]SourceControl: Source control is disabled
+[2019.11.19-10.57.39:048][  0]SourceControl: Source control is disabled
+[2019.11.19-10.57.39:126][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.11.19-10.57.39:133][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2019.11.19-10.57.39:133][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2019.11.19-10.57.39:197][  0]LogOcInput: OculusInput pre-init called
+[2019.11.19-10.57.39:201][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2019.11.19-10.57.39:201][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2019.11.19-10.57.39:608][  0]LogEngine: Initializing Engine...
+[2019.11.19-10.57.39:608][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.11.19-10.57.39:609][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2019.11.19-10.57.39:865][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.11.19-10.57.39:870][  0]LogAIModule: Creating AISystem for world Untitled
+[2019.11.19-10.57.39:884][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-10.57.39:884][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-10.57.39:884][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-10.57.39:884][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-10.57.39:884][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-10.57.39:884][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-10.57.39:884][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-10.57.39:884][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-10.57.39:884][  0]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-10.57.39:884][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-10.57.39:995][  0]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-10.57.39:995][  0]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-10.57.39:995][  0]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-10.57.39:995][  0]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-10.57.39:995][  0]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-10.57.39:995][  0]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-10.57.39:995][  0]LogAudioMixer: Display: Channel Order:
+[2019.11.19-10.57.39:995][  0]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-10.57.39:995][  0]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-10.57.39:995][  0]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-10.57.39:995][  0]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-10.57.39:995][  0]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-10.57.39:995][  0]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-10.57.39:995][  0]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-10.57.39:995][  0]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-10.57.40:059][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-10.57.40:063][  0]LogInit: FAudioDevice initialized.
+[2019.11.19-10.57.40:064][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.11.19-10.57.40:136][  0]LogDerivedDataCache: Saved boot cache 0.07s 94MB C:/Users/Elton/AppData/Local/UnrealEngine/4.24/DerivedDataCache/Boot.ddc.
+[2019.11.19-10.57.40:141][  0]LogInit: Texture streaming: Enabled
+[2019.11.19-10.57.40:146][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2019.11.19-10.57.40:147][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2019.11.19-10.57.40:148][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2019.11.19-10.57.40:184][  0]LogInit: Transaction tracking system initialized
+[2019.11.19-10.57.40:189][  0]BlueprintLog: New page: Editor Load
+[2019.11.19-10.57.40:214][  0]LocalizationService: Localization service is disabled
+[2019.11.19-10.57.40:392][  0]LogFileCache: Scanning file cache for directory 'D:/LostInSpace/LostInSpace/Content/' took 0.00s
+[2019.11.19-10.57.40:392][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2019.11.19-10.57.40:392][  0]LogCook: Display: Mobile HDR setting 1
+[2019.11.19-10.57.40:454][  0]SourceControl: Source control is disabled
+[2019.11.19-10.57.40:455][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.11.19-10.57.40:455][  0]LightingResults: New page: Lighting Build
+[2019.11.19-10.57.40:455][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-10.57.40:455][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-10.57.40:455][  0]MapCheck: New page: Map Check
+[2019.11.19-10.57.40:455][  0]LightingResults: New page: Lighting Build
+[2019.11.19-10.57.40:474][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.24ms
+[2019.11.19-10.57.40:528][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2019.11.19-10.57.40:531][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.11.19-10.57.40:552][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.48ms
+[2019.11.19-10.57.40:552][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.11.19-10.57.40:552][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.076ms to complete.
+[2019.11.19-10.57.40:552][  0]LogFileHelpers: Loading map 'Template_Default' took 0.098
+[2019.11.19-10.57.40:683][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-10.57.40:690][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-10.57.40:699][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-10.57.40:706][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-10.57.40:712][  0]LogCollectionManager: Loaded 0 collections in 0.000672 seconds
+[2019.11.19-10.57.40:724][  0]LogFileCache: Scanning file cache for directory 'D:/LostInSpace/LostInSpace/Saved/Collections/' took 0.00s
+[2019.11.19-10.57.40:724][  0]LogFileCache: Scanning file cache for directory 'D:/LostInSpace/LostInSpace/Content/Developers/Elton/Collections/' took 0.00s
+[2019.11.19-10.57.40:724][  0]LogFileCache: Scanning file cache for directory 'D:/LostInSpace/LostInSpace/Content/Collections/' took 0.00s
+[2019.11.19-10.57.40:724][  0]LogContentBrowser: Native class hierarchy populated in 0.0072 seconds. Added 3075 classes and 738 folders.
+[2019.11.19-10.57.40:725][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2019.11.19-10.57.40:754][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2019.11.19-10.57.40:757][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 2 classes and 3 folders.
+[2019.11.19-10.57.40:861][  0]LogSlate: Took 0.000215 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2019.11.19-10.57.40:864][  0]LogSlate: Took 0.000141 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2019.11.19-10.57.40:867][  0]LogSlate: Took 0.000095 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2019.11.19-10.57.40:923][  0]LogRenderer: Reallocating scene render targets to support 1616x808 Format 10 NumSamples 1 (Frame:1).
+[2019.11.19-10.57.41:032][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2019.11.19-10.57.41:032][  0]LogLoad: (Engine Initialization) Total time: 5.85 seconds
+[2019.11.19-10.57.41:032][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2019.11.19-10.57.41:066][  0]LogAssetRegistry: Asset discovery search completed in 3.3852 seconds
+[2019.11.19-10.57.41:069][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000006 seconds (updated 0 objects)
+[2019.11.19-10.57.41:070][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.11.19-10.57.41:102][  1]LogFileCache: Retrieving MD5 hashes for directory 'D:/LostInSpace/LostInSpace/Content/' took 0.06s
+[2019.11.19-10.57.45:900][536]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2019.11.19-10.57.45:912][536]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.19-10.57.45:912][536]PIE: New page: PIE session: Untitled_1 (Nov 18, 2019, 6:57:45 PM)
+[2019.11.19-10.57.45:913][536]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2019.11.19-10.57.45:913][536]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2019.11.19-10.57.45:913][536]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2019.11.19-10.57.45:915][536]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001875s)
+[2019.11.19-10.57.45:916][536]LogAIModule: Creating AISystem for world Untitled_1
+[2019.11.19-10.57.45:916][536]LogPlayLevel: PIE: World Init took: (0.001069s)
+[2019.11.19-10.57.45:917][536]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003116s)
+[2019.11.19-10.57.45:935][536]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2019.11.19-10.57.45:936][536]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-10.57.45:936][536]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-10.57.45:936][536]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-10.57.45:936][536]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-10.57.45:936][536]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-10.57.45:936][536]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-10.57.45:936][536]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-10.57.45:936][536]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-10.57.45:936][536]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-10.57.45:936][536]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-10.57.46:032][536]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-10.57.46:032][536]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-10.57.46:032][536]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-10.57.46:032][536]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-10.57.46:032][536]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-10.57.46:032][536]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-10.57.46:032][536]LogAudioMixer: Display: Channel Order:
+[2019.11.19-10.57.46:032][536]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-10.57.46:032][536]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-10.57.46:032][536]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-10.57.46:032][536]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-10.57.46:032][536]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-10.57.46:032][536]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-10.57.46:032][536]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-10.57.46:032][536]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-10.57.46:084][536]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-10.57.46:085][536]LogInit: FAudioDevice initialized.
+[2019.11.19-10.57.46:136][536]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-10.57.46:140][536]LogLoad: Game class is 'GameBlueprint_C'
+[2019.11.19-10.57.46:141][536]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2019.11.19-02.57.46
+[2019.11.19-10.57.46:141][536]LogWorld: Bringing up level for play took: 0.000600
+[2019.11.19-10.57.46:141][536]LogOnline: OSS: Creating online subsystem instance for: :Context_3
+[2019.11.19-10.57.46:145][536]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0002 seconds. Added 20 classes and 0 folders.
+[2019.11.19-10.57.46:147][536]PIE: Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.408
+[2019.11.19-10.57.49:944][984]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2019.11.19-10.57.50:148][  5]Cmd: TRANSACTION UNDO
+[2019.11.19-10.57.50:148][  5]LogEditorTransaction: Undo Clicking on Actors
+[2019.11.19-10.57.50:155][  5]LogSlate: Took 0.000148 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2019.11.19-10.58.12:082][ 92]LogLinker: Warning: While loading '../../../../LostInSpace/LostInSpace/Content/Blueprints/MovementTest.umap' failed to load '/Game/Blueprints/MovementTest_BuiltData': Can't find file.
+[2019.11.19-10.58.12:083][ 92]LogLinker: Warning: While loading '../../../../LostInSpace/LostInSpace/Content/Blueprints/MovementTest.umap' failed to load '/Game/Blueprints/MovementTest_BuiltData': Can't find file.
+[2019.11.19-10.58.12:083][ 92]LogLinker: Warning: While loading '../../../../LostInSpace/LostInSpace/Content/Blueprints/MovementTest.umap' failed to load '/Game/Blueprints/MovementTest_BuiltData': Can't find file.
+[2019.11.19-10.58.12:083][ 92]LogLinker: Warning: While loading '../../../../LostInSpace/LostInSpace/Content/Blueprints/MovementTest.umap' failed to load '/Game/Blueprints/MovementTest_BuiltData': Can't find file.
+[2019.11.19-10.58.12:084][ 92]LogLinker: Warning: While loading '../../../../LostInSpace/LostInSpace/Content/Blueprints/MovementTest.umap' failed to load '/Game/Blueprints/MovementTest_BuiltData': Can't find file.
+[2019.11.19-10.58.12:084][ 92]LoadErrors: Failed to load /Game/Blueprints/MovementTest_BuiltData.MovementTest_BuiltData Referenced by PersistentLevel
+[2019.11.19-10.58.12:084][ 92]LogLinker: Warning: While loading '../../../../LostInSpace/LostInSpace/Content/Blueprints/MovementTest.umap' failed to load '/Game/Blueprints/MovementTest_BuiltData': Can't find file.
+[2019.11.19-10.58.12:085][ 92]LogAIModule: Creating AISystem for world MovementTest
+[2019.11.19-10.58.12:087][ 92]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Blueprints/MovementTest.MovementTest
+[2019.11.19-10.58.12:105][ 92]LogUObjectHash: Compacting FUObjectHashTables data took   1.46ms
+[2019.11.19-10.58.15:665][ 92]LogSlate: Window 'Save Content' being destroyed
+[2019.11.19-10.58.17:948][ 92]LogSlate: Window 'Message' being destroyed
+[2019.11.19-10.58.17:951][ 92]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-10.58.17:951][ 92]LogWorld: BeginTearingDown for /Temp/UEDPIE_0_Untitled_1
+[2019.11.19-10.58.17:964][ 92]LogSlate: Window 'LostInSpace Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.11.19-10.58.17:966][ 92]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-10.58.17:966][ 92]LogWorld: UWorld::CleanupWorld for Untitled_1, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-10.58.17:966][ 92]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-10.58.17:971][ 92]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.19-10.58.17:973][ 92]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-10.58.17:992][ 92]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-10.58.17:998][ 92]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
+[2019.11.19-10.58.18:001][ 92]Cmd: MAP LOAD FILE="../../../../LostInSpace/LostInSpace/Content/Blueprints/MovementTest.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2019.11.19-10.58.18:018][ 92]LightingResults: New page: Lighting Build
+[2019.11.19-10.58.18:019][ 92]LoadErrors: New page: Loading map: MovementTest.umap
+[2019.11.19-10.58.18:019][ 92]LogWorld: UWorld::CleanupWorld for Untitled_1, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-10.58.18:019][ 92]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-10.58.18:019][ 92]MapCheck: New page: Map Check
+[2019.11.19-10.58.18:019][ 92]LightingResults: New page: Lighting Build
+[2019.11.19-10.58.18:037][ 92]LogUObjectHash: Compacting FUObjectHashTables data took   1.22ms
+[2019.11.19-10.58.18:083][ 92]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2019.11.19-10.58.18:100][ 92]LogUObjectHash: Compacting FUObjectHashTables data took   1.22ms
+[2019.11.19-10.58.18:124][ 92]Cmd: MAP CHECKDEP NOCLEARLOG
+[2019.11.19-10.58.18:124][ 92]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.056ms to complete.
+[2019.11.19-10.58.18:124][ 92]LogFileHelpers: Loading map 'MovementTest' took 2.457
+[2019.11.19-10.58.18:155][ 93]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2019.11.19-10.58.21:603][483]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MovementTest" FILE="../../../../LostInSpace/LostInSpace/Content/Maps/MovementTest.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2019.11.19-10.58.21:623][483]LogUObjectHash: Compacting FUObjectHashTables data took   0.48ms
+[2019.11.19-10.58.21:634][483]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/MovementTest472531E54F9E1D80AA36258BDB1FEBFA.tmp' to '../../../../LostInSpace/LostInSpace/Content/Maps/MovementTest.umap'
+[2019.11.19-10.58.21:656][483]LogFileHelpers: Saving map 'MovementTest' took 0.053
+[2019.11.19-10.58.21:754][483]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2019.11.19-10.58.21:778][483]LogUObjectHash: Compacting FUObjectHashTables data took   1.18ms
+[2019.11.19-10.58.21:796][483]LogUObjectHash: Compacting FUObjectHashTables data took   0.48ms
+[2019.11.19-10.58.21:814][483]AssetCheck: New page: Asset Save: MovementTest
+[2019.11.19-10.58.21:814][483]LogContentValidation: Display: Validating World /Game/Maps/MovementTest.MovementTest
+[2019.11.19-10.58.24:601][815]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2019.11.19-10.58.24:610][815]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.19-10.58.24:610][815]PIE: New page: PIE session: MovementTest (Nov 18, 2019, 6:58:24 PM)
+[2019.11.19-10.58.24:610][815]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-10.58.24:612][815]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001362s)
+[2019.11.19-10.58.24:613][815]LogAIModule: Creating AISystem for world MovementTest
+[2019.11.19-10.58.24:613][815]LogPlayLevel: PIE: World Init took: (0.000793s)
+[2019.11.19-10.58.24:613][815]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MovementTest.MovementTest to /Game/Maps/UEDPIE_0_MovementTest.MovementTest (0.002288s)
+[2019.11.19-10.58.24:632][815]LogUObjectHash: Compacting FUObjectHashTables data took   1.04ms
+[2019.11.19-10.58.24:632][815]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-10.58.24:632][815]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-10.58.24:632][815]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-10.58.24:632][815]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-10.58.24:632][815]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-10.58.24:632][815]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-10.58.24:632][815]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-10.58.24:632][815]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-10.58.24:632][815]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-10.58.24:632][815]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-10.58.24:731][815]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-10.58.24:731][815]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-10.58.24:731][815]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-10.58.24:731][815]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-10.58.24:731][815]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-10.58.24:731][815]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-10.58.24:731][815]LogAudioMixer: Display: Channel Order:
+[2019.11.19-10.58.24:731][815]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-10.58.24:731][815]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-10.58.24:731][815]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-10.58.24:731][815]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-10.58.24:731][815]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-10.58.24:731][815]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-10.58.24:731][815]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-10.58.24:731][815]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-10.58.24:782][815]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-10.58.24:783][815]LogInit: FAudioDevice initialized.
+[2019.11.19-10.58.24:819][815]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-10.58.24:819][815]LogLoad: Game class is 'GameBlueprint_C'
+[2019.11.19-10.58.24:820][815]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MovementTest.MovementTest up for play (max tick rate 0) at 2019.11.19-02.58.24
+[2019.11.19-10.58.24:820][815]LogWorld: Bringing up level for play took: 0.000472
+[2019.11.19-10.58.24:820][815]LogOnline: OSS: Creating online subsystem instance for: :Context_4
+[2019.11.19-10.58.24:823][815]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MovementTest 1.084
+[2019.11.19-10.58.30:279][464]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-10.58.30:280][464]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-10.58.30:280][464]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-10.58.30:280][464]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-10.58.30:290][464]LogSlate: Window 'LostInSpace Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.11.19-10.58.30:293][464]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-10.58.30:293][464]LogWorld: UWorld::CleanupWorld for MovementTest, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-10.58.30:293][464]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-10.58.30:300][464]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.19-10.58.30:302][464]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-10.58.30:320][464]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-10.58.30:326][464]LogUObjectHash: Compacting FUObjectHashTables data took   1.02ms
+[2019.11.19-10.58.30:382][469]LogPlayLevel: Display: Destroying online subsystem :Context_4
+[2019.11.19-10.58.31:764][623]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Spaceship-Actor.Spaceship-Actor
+[2019.11.19-10.58.31:938][623]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0004 seconds. Added 121 classes and 0 folders.
+[2019.11.19-10.58.32:569][623]LogSlate: Took 0.000119 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2019.11.19-10.58.32:621][624]LogSlate: Took 0.000125 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2019.11.19-10.58.41:653][488]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/GameBlueprint.GameBlueprint
+[2019.11.19-10.58.47:843][139]BlueprintLog: New page: Compile GameBlueprint
+[2019.11.19-10.58.47:996][139]LogUObjectHash: Compacting FUObjectHashTables data took   2.40ms
+[2019.11.19-11.09.26:054][775]LogUObjectHash: Compacting FUObjectHashTables data took   3.38ms
+[2019.11.19-11.09.26:055][775]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MovementTest' took 0.047
+[2019.11.19-11.09.26:055][775]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/GameBlueprint] ([1] browsable assets)...
+[2019.11.19-11.09.26:055][775]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/GameBlueprint]
+[2019.11.19-11.09.26:055][775]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/GameBlueprint" FILE="../../../../LostInSpace/LostInSpace/Saved/Autosaves/Game/Blueprints/GameBlueprint_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2019.11.19-11.09.26:079][775]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/GameBlueprint_Auto17958FFB54D956EA21E0198BF4C3922D2.tmp' to '../../../../LostInSpace/LostInSpace/Saved/Autosaves/Game/Blueprints/GameBlueprint_Auto1.uasset'
+[2019.11.19-11.09.26:080][775]LogFileHelpers: Auto-saving content packages took 0.025
+[2019.11.19-11.12.09:443][265]LogSlate: Window 'Project Settings' being destroyed
+[2019.11.19-11.12.09:446][265]LogSlate: Window 'Project Settings' being destroyed
+[2019.11.19-11.15.46:316][ 12]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Spaceship-Actor" FILE="../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset" SILENT=true
+[2019.11.19-11.15.46:353][ 12]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/Spaceship-Actor31DC24A346210CAF01C1F7B9050D5DDE.tmp' to '../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset'
+[2019.11.19-11.15.46:363][ 12]AssetCheck: New page: Asset Save: Spaceship-Actor
+[2019.11.19-11.15.46:363][ 12]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Spaceship-Actor.Spaceship-Actor
+[2019.11.19-11.15.47:726][160]BlueprintLog: New page: Compile Spaceship-Actor
+[2019.11.19-11.15.47:922][160]LogUObjectHash: Compacting FUObjectHashTables data took   3.14ms
+[2019.11.19-11.15.51:116][532]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2019.11.19-11.15.51:132][532]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.19-11.15.51:132][532]PIE: New page: PIE session: MovementTest (Nov 18, 2019, 7:15:51 PM)
+[2019.11.19-11.15.51:132][532]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.15.51:134][532]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001503s)
+[2019.11.19-11.15.51:134][532]LogAIModule: Creating AISystem for world MovementTest
+[2019.11.19-11.15.51:134][532]LogPlayLevel: PIE: World Init took: (0.000715s)
+[2019.11.19-11.15.51:134][532]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MovementTest.MovementTest to /Game/Maps/UEDPIE_0_MovementTest.MovementTest (0.002303s)
+[2019.11.19-11.15.51:164][532]LogUObjectHash: Compacting FUObjectHashTables data took   2.80ms
+[2019.11.19-11.15.51:165][532]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-11.15.51:165][532]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-11.15.51:165][532]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-11.15.51:165][532]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-11.15.51:165][532]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-11.15.51:165][532]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-11.15.51:165][532]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-11.15.51:165][532]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-11.15.51:165][532]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-11.15.51:165][532]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-11.15.51:264][532]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-11.15.51:264][532]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-11.15.51:264][532]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-11.15.51:264][532]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-11.15.51:264][532]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-11.15.51:264][532]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-11.15.51:264][532]LogAudioMixer: Display: Channel Order:
+[2019.11.19-11.15.51:264][532]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-11.15.51:264][532]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-11.15.51:264][532]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-11.15.51:264][532]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-11.15.51:264][532]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-11.15.51:264][532]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-11.15.51:264][532]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-11.15.51:264][532]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-11.15.51:314][532]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-11.15.51:315][532]LogInit: FAudioDevice initialized.
+[2019.11.19-11.15.51:344][532]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.15.51:344][532]LogLoad: Game class is 'GameBlueprint_C'
+[2019.11.19-11.15.51:345][532]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MovementTest.MovementTest up for play (max tick rate 0) at 2019.11.19-03.15.51
+[2019.11.19-11.15.51:345][532]LogWorld: Bringing up level for play took: 0.000476
+[2019.11.19-11.15.51:345][532]LogOnline: OSS: Creating online subsystem instance for: :Context_9
+[2019.11.19-11.15.51:349][532]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MovementTest -0.389
+[2019.11.19-11.16.00:740][653]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.16.00:767][653]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2019.11.19-11.16.00:787][653]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2019.11.19-11.16.00:788][653]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.16.00:788][653]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.16.00:798][653]LogSlate: Window 'LostInSpace Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.11.19-11.16.00:802][653]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.16.00:802][653]LogWorld: UWorld::CleanupWorld for MovementTest, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-11.16.00:802][653]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.16.00:811][653]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.19-11.16.00:815][653]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.16.00:844][653]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.16.00:850][653]LogUObjectHash: Compacting FUObjectHashTables data took   2.32ms
+[2019.11.19-11.16.00:861][654]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2019.11.19-11.16.06:109][230]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2019.11.19-11.16.06:125][230]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.19-11.16.06:125][230]PIE: New page: PIE session: MovementTest (Nov 18, 2019, 7:16:06 PM)
+[2019.11.19-11.16.06:126][230]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.16.06:127][230]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001401s)
+[2019.11.19-11.16.06:128][230]LogAIModule: Creating AISystem for world MovementTest
+[2019.11.19-11.16.06:128][230]LogPlayLevel: PIE: World Init took: (0.000923s)
+[2019.11.19-11.16.06:128][230]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MovementTest.MovementTest to /Game/Maps/UEDPIE_0_MovementTest.MovementTest (0.002412s)
+[2019.11.19-11.16.06:154][230]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2019.11.19-11.16.06:155][230]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-11.16.06:155][230]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-11.16.06:155][230]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-11.16.06:155][230]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-11.16.06:155][230]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-11.16.06:155][230]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-11.16.06:155][230]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-11.16.06:155][230]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-11.16.06:156][230]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-11.16.06:156][230]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-11.16.06:253][230]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-11.16.06:253][230]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-11.16.06:253][230]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-11.16.06:253][230]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-11.16.06:253][230]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-11.16.06:253][230]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-11.16.06:253][230]LogAudioMixer: Display: Channel Order:
+[2019.11.19-11.16.06:253][230]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-11.16.06:253][230]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-11.16.06:253][230]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-11.16.06:253][230]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-11.16.06:253][230]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-11.16.06:253][230]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-11.16.06:253][230]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-11.16.06:253][230]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-11.16.06:307][230]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-11.16.06:308][230]LogInit: FAudioDevice initialized.
+[2019.11.19-11.16.06:356][230]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.16.06:356][230]LogLoad: Game class is 'GameBlueprint_C'
+[2019.11.19-11.16.06:357][230]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MovementTest.MovementTest up for play (max tick rate 0) at 2019.11.19-03.16.06
+[2019.11.19-11.16.06:357][230]LogWorld: Bringing up level for play took: 0.000582
+[2019.11.19-11.16.06:357][230]LogOnline: OSS: Creating online subsystem instance for: :Context_10
+[2019.11.19-11.16.06:361][230]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MovementTest 0.622
+[2019.11.19-11.16.14:014][124]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.16.14:014][124]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.16.14:014][124]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.16.14:014][124]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.16.14:025][124]LogSlate: Window 'LostInSpace Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.11.19-11.16.14:029][124]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.16.14:029][124]LogWorld: UWorld::CleanupWorld for MovementTest, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-11.16.14:030][124]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.16.14:039][124]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.19-11.16.14:043][124]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.16.14:071][124]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.16.14:077][124]LogUObjectHash: Compacting FUObjectHashTables data took   2.18ms
+[2019.11.19-11.16.14:120][128]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2019.11.19-11.27.05:875][719]LogRenderer: Reallocating scene render targets to support 1616x1000 Format 10 NumSamples 1 (Frame:1).
+[2019.11.19-11.27.16:899][919]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Spaceship-Actor" FILE="../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset" SILENT=true
+[2019.11.19-11.27.16:941][919]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/Spaceship-ActorA673F42844B8CF59EFEF7C962D95B4F9.tmp' to '../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset'
+[2019.11.19-11.27.16:953][919]AssetCheck: New page: Asset Save: Spaceship-Actor
+[2019.11.19-11.27.16:953][919]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Spaceship-Actor.Spaceship-Actor
+[2019.11.19-11.27.17:540][976]BlueprintLog: New page: Compile Spaceship-Actor
+[2019.11.19-11.27.17:750][976]LogUObjectHash: Compacting FUObjectHashTables data took   4.34ms
+[2019.11.19-11.27.19:907][199]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2019.11.19-11.27.19:923][199]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.19-11.27.19:923][199]PIE: New page: PIE session: MovementTest (Nov 18, 2019, 7:27:19 PM)
+[2019.11.19-11.27.19:923][199]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.27.19:925][199]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001506s)
+[2019.11.19-11.27.19:925][199]LogAIModule: Creating AISystem for world MovementTest
+[2019.11.19-11.27.19:925][199]LogPlayLevel: PIE: World Init took: (0.000718s)
+[2019.11.19-11.27.19:925][199]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MovementTest.MovementTest to /Game/Maps/UEDPIE_0_MovementTest.MovementTest (0.002323s)
+[2019.11.19-11.27.19:956][199]LogUObjectHash: Compacting FUObjectHashTables data took   2.87ms
+[2019.11.19-11.27.19:958][199]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-11.27.19:958][199]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-11.27.19:958][199]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-11.27.19:958][199]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-11.27.19:958][199]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-11.27.19:958][199]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-11.27.19:958][199]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-11.27.19:958][199]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-11.27.19:958][199]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-11.27.19:958][199]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-11.27.20:053][199]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-11.27.20:053][199]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-11.27.20:053][199]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-11.27.20:053][199]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-11.27.20:053][199]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-11.27.20:053][199]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-11.27.20:053][199]LogAudioMixer: Display: Channel Order:
+[2019.11.19-11.27.20:053][199]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-11.27.20:053][199]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-11.27.20:053][199]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-11.27.20:053][199]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-11.27.20:053][199]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-11.27.20:053][199]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-11.27.20:053][199]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-11.27.20:053][199]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-11.27.20:104][199]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-11.27.20:105][199]LogInit: FAudioDevice initialized.
+[2019.11.19-11.27.20:158][199]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.27.20:158][199]LogLoad: Game class is 'GameBlueprint_C'
+[2019.11.19-11.27.20:159][199]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MovementTest.MovementTest up for play (max tick rate 0) at 2019.11.19-03.27.20
+[2019.11.19-11.27.20:159][199]LogWorld: Bringing up level for play took: 0.000573
+[2019.11.19-11.27.20:159][199]LogOnline: OSS: Creating online subsystem instance for: :Context_12
+[2019.11.19-11.27.20:163][199]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MovementTest 0.424
+[2019.11.19-11.27.32:470][669]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.27.32:478][669]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2019.11.19-11.27.32:497][669]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2019.11.19-11.27.32:497][669]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.27.32:497][669]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.27.32:507][669]LogSlate: Window 'LostInSpace Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.11.19-11.27.32:511][669]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.27.32:511][669]LogWorld: UWorld::CleanupWorld for MovementTest, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-11.27.32:511][669]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.27.32:515][669]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.19-11.27.32:519][669]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.27.32:547][669]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.27.32:553][669]LogUObjectHash: Compacting FUObjectHashTables data took   2.40ms
+[2019.11.19-11.27.32:589][671]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2019.11.19-11.27.36:834][929]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Spaceship-Actor" FILE="../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset" SILENT=true
+[2019.11.19-11.27.36:854][929]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/Spaceship-Actor82F205E948B71A5772F8C3BFB57A8437.tmp' to '../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset'
+[2019.11.19-11.27.36:863][929]AssetCheck: New page: Asset Save: Spaceship-Actor
+[2019.11.19-11.27.36:863][929]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Spaceship-Actor.Spaceship-Actor
+[2019.11.19-11.29.01:290][146]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Spaceship-Actor" FILE="../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset" SILENT=true
+[2019.11.19-11.29.01:311][146]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/Spaceship-Actor9CDEB9B2427D32800C1BFF85242874C0.tmp' to '../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset'
+[2019.11.19-11.29.01:321][146]AssetCheck: New page: Asset Save: Spaceship-Actor
+[2019.11.19-11.29.01:321][146]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Spaceship-Actor.Spaceship-Actor
+[2019.11.19-11.29.02:303][259]BlueprintLog: New page: Compile Spaceship-Actor
+[2019.11.19-11.29.02:498][259]LogUObjectHash: Compacting FUObjectHashTables data took   2.75ms
+[2019.11.19-11.29.04:898][530]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2019.11.19-11.29.04:913][530]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.19-11.29.04:913][530]PIE: New page: PIE session: MovementTest (Nov 18, 2019, 7:29:04 PM)
+[2019.11.19-11.29.04:913][530]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.29.04:914][530]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001377s)
+[2019.11.19-11.29.04:915][530]LogAIModule: Creating AISystem for world MovementTest
+[2019.11.19-11.29.04:915][530]LogPlayLevel: PIE: World Init took: (0.000687s)
+[2019.11.19-11.29.04:915][530]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MovementTest.MovementTest to /Game/Maps/UEDPIE_0_MovementTest.MovementTest (0.002152s)
+[2019.11.19-11.29.04:943][530]LogUObjectHash: Compacting FUObjectHashTables data took   2.98ms
+[2019.11.19-11.29.04:943][530]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-11.29.04:943][530]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-11.29.04:943][530]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-11.29.04:943][530]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-11.29.04:943][530]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-11.29.04:943][530]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-11.29.04:943][530]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-11.29.04:943][530]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-11.29.04:943][530]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-11.29.04:943][530]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-11.29.05:036][530]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-11.29.05:036][530]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-11.29.05:036][530]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-11.29.05:036][530]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-11.29.05:037][530]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-11.29.05:037][530]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-11.29.05:037][530]LogAudioMixer: Display: Channel Order:
+[2019.11.19-11.29.05:037][530]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-11.29.05:037][530]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-11.29.05:037][530]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-11.29.05:037][530]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-11.29.05:037][530]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-11.29.05:037][530]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-11.29.05:037][530]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-11.29.05:037][530]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-11.29.05:088][530]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-11.29.05:089][530]LogInit: FAudioDevice initialized.
+[2019.11.19-11.29.05:115][530]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.29.05:115][530]LogLoad: Game class is 'GameBlueprint_C'
+[2019.11.19-11.29.05:116][530]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MovementTest.MovementTest up for play (max tick rate 0) at 2019.11.19-03.29.05
+[2019.11.19-11.29.05:116][530]LogWorld: Bringing up level for play took: 0.000478
+[2019.11.19-11.29.05:117][530]LogOnline: OSS: Creating online subsystem instance for: :Context_13
+[2019.11.19-11.29.05:119][530]LogBlueprintUserMessages: [Spaceship-Actor_C_0] 10
+[2019.11.19-11.29.05:121][530]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MovementTest -0.618
+[2019.11.19-11.29.09:104][  3]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.29.09:104][  3]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.29.09:104][  3]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.29.09:104][  3]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.29.09:114][  3]LogSlate: Window 'LostInSpace Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.11.19-11.29.09:118][  3]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.29.09:118][  3]LogWorld: UWorld::CleanupWorld for MovementTest, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-11.29.09:118][  3]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.29.09:127][  3]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.19-11.29.09:131][  3]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.29.09:159][  3]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.29.09:165][  3]LogUObjectHash: Compacting FUObjectHashTables data took   2.30ms
+[2019.11.19-11.29.09:206][  6]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2019.11.19-11.29.41:525][737]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Spaceship-Actor" FILE="../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset" SILENT=true
+[2019.11.19-11.29.41:546][737]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/Spaceship-ActorBEA2D1614E1D40625098348E9A962033.tmp' to '../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset'
+[2019.11.19-11.29.41:555][737]AssetCheck: New page: Asset Save: Spaceship-Actor
+[2019.11.19-11.29.41:555][737]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Spaceship-Actor.Spaceship-Actor
+[2019.11.19-11.29.44:792][915]BlueprintLog: New page: Compile Spaceship-Actor
+[2019.11.19-11.29.44:985][915]LogUObjectHash: Compacting FUObjectHashTables data took   2.79ms
+[2019.11.19-11.29.47:518][210]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2019.11.19-11.29.47:533][210]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.19-11.29.47:533][210]PIE: New page: PIE session: MovementTest (Nov 18, 2019, 7:29:47 PM)
+[2019.11.19-11.29.47:533][210]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.29.47:534][210]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001367s)
+[2019.11.19-11.29.47:535][210]LogAIModule: Creating AISystem for world MovementTest
+[2019.11.19-11.29.47:535][210]LogPlayLevel: PIE: World Init took: (0.000677s)
+[2019.11.19-11.29.47:535][210]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MovementTest.MovementTest to /Game/Maps/UEDPIE_0_MovementTest.MovementTest (0.002130s)
+[2019.11.19-11.29.47:562][210]LogUObjectHash: Compacting FUObjectHashTables data took   2.93ms
+[2019.11.19-11.29.47:563][210]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-11.29.47:563][210]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-11.29.47:563][210]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-11.29.47:563][210]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-11.29.47:563][210]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-11.29.47:563][210]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-11.29.47:563][210]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-11.29.47:563][210]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-11.29.47:563][210]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-11.29.47:563][210]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-11.29.47:658][210]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-11.29.47:658][210]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-11.29.47:658][210]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-11.29.47:658][210]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-11.29.47:658][210]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-11.29.47:658][210]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-11.29.47:658][210]LogAudioMixer: Display: Channel Order:
+[2019.11.19-11.29.47:658][210]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-11.29.47:658][210]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-11.29.47:658][210]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-11.29.47:658][210]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-11.29.47:658][210]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-11.29.47:658][210]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-11.29.47:658][210]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-11.29.47:658][210]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-11.29.47:710][210]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-11.29.47:711][210]LogInit: FAudioDevice initialized.
+[2019.11.19-11.29.47:753][210]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.29.47:754][210]LogLoad: Game class is 'GameBlueprint_C'
+[2019.11.19-11.29.47:754][210]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MovementTest.MovementTest up for play (max tick rate 0) at 2019.11.19-03.29.47
+[2019.11.19-11.29.47:755][210]LogWorld: Bringing up level for play took: 0.000489
+[2019.11.19-11.29.47:755][210]LogOnline: OSS: Creating online subsystem instance for: :Context_14
+[2019.11.19-11.29.47:757][210]LogBlueprintUserMessages: [Spaceship-Actor_C_0] 10
+[2019.11.19-11.29.47:759][210]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MovementTest 0.019
+[2019.11.19-11.29.52:777][807]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.29.52:777][807]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.29.52:777][807]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.29.52:777][807]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.29.52:787][807]LogSlate: Window 'LostInSpace Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.11.19-11.29.52:791][807]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.29.52:791][807]LogWorld: UWorld::CleanupWorld for MovementTest, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-11.29.52:791][807]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.29.52:794][807]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.19-11.29.52:798][807]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.29.52:826][807]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.29.52:834][807]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
+[2019.11.19-11.29.52:884][811]LogPlayLevel: Display: Destroying online subsystem :Context_14
+[2019.11.19-11.32.45:986][ 63]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Spaceship-Actor" FILE="../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset" SILENT=true
+[2019.11.19-11.32.46:027][ 63]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/Spaceship-Actor133B76254B0301D580D150B887160A0F.tmp' to '../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset'
+[2019.11.19-11.32.46:039][ 63]AssetCheck: New page: Asset Save: Spaceship-Actor
+[2019.11.19-11.32.46:039][ 63]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Spaceship-Actor.Spaceship-Actor
+[2019.11.19-11.32.47:427][221]BlueprintLog: New page: Compile Spaceship-Actor
+[2019.11.19-11.32.47:619][221]LogUObjectHash: Compacting FUObjectHashTables data took   2.82ms
+[2019.11.19-11.32.50:101][507]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2019.11.19-11.32.50:117][507]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.19-11.32.50:117][507]PIE: New page: PIE session: MovementTest (Nov 18, 2019, 7:32:50 PM)
+[2019.11.19-11.32.50:117][507]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.32.50:118][507]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001465s)
+[2019.11.19-11.32.50:119][507]LogAIModule: Creating AISystem for world MovementTest
+[2019.11.19-11.32.50:119][507]LogPlayLevel: PIE: World Init took: (0.000750s)
+[2019.11.19-11.32.50:119][507]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MovementTest.MovementTest to /Game/Maps/UEDPIE_0_MovementTest.MovementTest (0.002299s)
+[2019.11.19-11.32.50:146][507]LogUObjectHash: Compacting FUObjectHashTables data took   2.96ms
+[2019.11.19-11.32.50:147][507]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-11.32.50:147][507]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-11.32.50:147][507]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-11.32.50:147][507]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-11.32.50:147][507]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-11.32.50:147][507]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-11.32.50:147][507]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-11.32.50:147][507]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-11.32.50:147][507]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-11.32.50:147][507]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-11.32.50:246][507]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-11.32.50:246][507]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-11.32.50:246][507]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-11.32.50:246][507]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-11.32.50:246][507]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-11.32.50:246][507]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-11.32.50:246][507]LogAudioMixer: Display: Channel Order:
+[2019.11.19-11.32.50:246][507]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-11.32.50:246][507]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-11.32.50:246][507]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-11.32.50:246][507]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-11.32.50:246][507]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-11.32.50:246][507]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-11.32.50:246][507]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-11.32.50:246][507]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-11.32.50:297][507]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-11.32.50:298][507]LogInit: FAudioDevice initialized.
+[2019.11.19-11.32.50:345][507]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.32.50:345][507]LogLoad: Game class is 'GameBlueprint_C'
+[2019.11.19-11.32.50:346][507]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MovementTest.MovementTest up for play (max tick rate 0) at 2019.11.19-03.32.50
+[2019.11.19-11.32.50:346][507]LogWorld: Bringing up level for play took: 0.000512
+[2019.11.19-11.32.50:346][507]LogOnline: OSS: Creating online subsystem instance for: :Context_15
+[2019.11.19-11.32.50:350][507]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MovementTest 0.611
+[2019.11.19-11.32.55:116][ 34]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.32.55:127][ 34]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2019.11.19-11.32.55:147][ 34]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2019.11.19-11.32.55:148][ 34]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.32.55:148][ 34]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.32.55:157][ 34]LogSlate: Window 'LostInSpace Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
+[2019.11.19-11.32.55:158][ 34]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.32.55:159][ 34]LogWorld: UWorld::CleanupWorld for MovementTest, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-11.32.55:159][ 34]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.32.55:163][ 34]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.19-11.32.55:167][ 34]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.32.55:191][ 34]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.32.55:198][ 34]LogUObjectHash: Compacting FUObjectHashTables data took   2.37ms
+[2019.11.19-11.32.55:218][ 36]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2019.11.19-11.32.56:808][221]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.19-11.32.56:808][221]PIE: New page: PIE session: MovementTest (Nov 18, 2019, 7:32:56 PM)
+[2019.11.19-11.32.56:808][221]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.32.56:809][221]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001410s)
+[2019.11.19-11.32.56:810][221]LogAIModule: Creating AISystem for world MovementTest
+[2019.11.19-11.32.56:810][221]LogPlayLevel: PIE: World Init took: (0.000740s)
+[2019.11.19-11.32.56:810][221]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MovementTest.MovementTest to /Game/Maps/UEDPIE_0_MovementTest.MovementTest (0.002257s)
+[2019.11.19-11.32.56:839][221]LogUObjectHash: Compacting FUObjectHashTables data took   2.14ms
+[2019.11.19-11.32.56:840][221]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-11.32.56:840][221]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-11.32.56:840][221]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-11.32.56:840][221]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-11.32.56:840][221]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-11.32.56:840][221]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-11.32.56:840][221]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-11.32.56:840][221]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-11.32.56:840][221]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-11.32.56:840][221]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-11.32.56:933][221]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-11.32.56:933][221]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-11.32.56:933][221]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-11.32.56:933][221]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-11.32.56:933][221]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-11.32.56:933][221]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-11.32.56:933][221]LogAudioMixer: Display: Channel Order:
+[2019.11.19-11.32.56:933][221]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-11.32.56:933][221]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-11.32.56:933][221]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-11.32.56:933][221]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-11.32.56:933][221]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-11.32.56:933][221]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-11.32.56:933][221]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-11.32.56:933][221]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-11.32.56:983][221]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-11.32.56:984][221]LogInit: FAudioDevice initialized.
+[2019.11.19-11.32.56:992][221]LogLoad: Game class is 'GameBlueprint_C'
+[2019.11.19-11.32.56:993][221]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MovementTest.MovementTest up for play (max tick rate 0) at 2019.11.19-03.32.56
+[2019.11.19-11.32.56:993][221]LogWorld: Bringing up level for play took: 0.000359
+[2019.11.19-11.32.56:993][221]LogOnline: OSS: Creating online subsystem instance for: :Context_16
+[2019.11.19-11.32.56:995][221]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MovementTest -0.744
+[2019.11.19-11.32.58:318][377]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.32.58:327][377]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2019.11.19-11.32.58:347][377]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2019.11.19-11.32.58:347][377]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.32.58:347][377]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.32.58:347][377]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.32.58:347][377]LogWorld: UWorld::CleanupWorld for MovementTest, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-11.32.58:348][377]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.32.58:353][377]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.19-11.32.58:356][377]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.32.58:380][377]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.32.58:384][377]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.32.58:386][377]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2019.11.19-11.32.58:427][380]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2019.11.19-11.33.01:945][799]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.19-11.33.01:961][799]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.19-11.33.01:961][799]PIE: New page: PIE session: MovementTest (Nov 18, 2019, 7:33:01 PM)
+[2019.11.19-11.33.01:961][799]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.33.01:963][799]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001374s)
+[2019.11.19-11.33.01:963][799]LogAIModule: Creating AISystem for world MovementTest
+[2019.11.19-11.33.01:963][799]LogPlayLevel: PIE: World Init took: (0.000685s)
+[2019.11.19-11.33.01:963][799]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MovementTest.MovementTest to /Game/Maps/UEDPIE_0_MovementTest.MovementTest (0.002145s)
+[2019.11.19-11.33.01:993][799]LogUObjectHash: Compacting FUObjectHashTables data took   2.20ms
+[2019.11.19-11.33.01:994][799]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-11.33.01:994][799]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-11.33.01:994][799]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-11.33.01:994][799]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-11.33.01:994][799]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-11.33.01:994][799]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-11.33.01:994][799]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-11.33.01:994][799]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-11.33.01:994][799]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-11.33.01:994][799]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-11.33.02:089][799]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-11.33.02:089][799]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-11.33.02:089][799]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-11.33.02:089][799]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-11.33.02:089][799]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-11.33.02:089][799]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-11.33.02:089][799]LogAudioMixer: Display: Channel Order:
+[2019.11.19-11.33.02:089][799]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-11.33.02:089][799]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-11.33.02:089][799]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-11.33.02:089][799]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-11.33.02:089][799]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-11.33.02:089][799]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-11.33.02:089][799]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-11.33.02:089][799]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-11.33.02:139][799]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-11.33.02:140][799]LogInit: FAudioDevice initialized.
+[2019.11.19-11.33.02:145][799]LogLoad: Game class is 'GameBlueprint_C'
+[2019.11.19-11.33.02:146][799]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MovementTest.MovementTest up for play (max tick rate 0) at 2019.11.19-03.33.02
+[2019.11.19-11.33.02:146][799]LogWorld: Bringing up level for play took: 0.000324
+[2019.11.19-11.33.02:146][799]LogOnline: OSS: Creating online subsystem instance for: :Context_17
+[2019.11.19-11.33.02:148][799]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MovementTest 0.409
+[2019.11.19-11.33.10:150][742]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.33.10:167][742]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2019.11.19-11.33.10:187][742]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2019.11.19-11.33.10:187][742]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.33.10:187][742]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.33.10:188][742]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.33.10:188][742]LogWorld: UWorld::CleanupWorld for MovementTest, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-11.33.10:188][742]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.33.10:191][742]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.19-11.33.10:195][742]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.33.10:226][742]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.33.10:229][742]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.33.10:232][742]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2019.11.19-11.33.10:255][744]LogPlayLevel: Display: Destroying online subsystem :Context_17
+[2019.11.19-11.33.14:750][263]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2019.11.19-11.33.20:894][936]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MovementTest" FILE="../../../../LostInSpace/LostInSpace/Content/Maps/MovementTest.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2019.11.19-11.33.20:922][936]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2019.11.19-11.33.20:938][936]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/MovementTestD901375847B4F3D5C00755A57FF6BB9A.tmp' to '../../../../LostInSpace/LostInSpace/Content/Maps/MovementTest.umap'
+[2019.11.19-11.33.20:970][936]AssetCheck: New page: Asset Save: MovementTest
+[2019.11.19-11.33.20:970][936]LogContentValidation: Display: Validating World /Game/Maps/MovementTest.MovementTest
+[2019.11.19-11.33.21:915][ 40]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.19-11.33.21:932][ 40]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.19-11.33.21:932][ 40]PIE: New page: PIE session: MovementTest (Nov 18, 2019, 7:33:21 PM)
+[2019.11.19-11.33.21:932][ 40]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.33.21:934][ 40]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001384s)
+[2019.11.19-11.33.21:935][ 40]LogAIModule: Creating AISystem for world MovementTest
+[2019.11.19-11.33.21:935][ 40]LogPlayLevel: PIE: World Init took: (0.000853s)
+[2019.11.19-11.33.21:935][ 40]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MovementTest.MovementTest to /Game/Maps/UEDPIE_0_MovementTest.MovementTest (0.002322s)
+[2019.11.19-11.33.21:962][ 40]LogUObjectHash: Compacting FUObjectHashTables data took   2.66ms
+[2019.11.19-11.33.21:963][ 40]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-11.33.21:963][ 40]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-11.33.21:963][ 40]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-11.33.21:963][ 40]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-11.33.21:963][ 40]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-11.33.21:963][ 40]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-11.33.21:963][ 40]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-11.33.21:963][ 40]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-11.33.21:963][ 40]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-11.33.21:963][ 40]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-11.33.22:057][ 40]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-11.33.22:057][ 40]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-11.33.22:057][ 40]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-11.33.22:057][ 40]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-11.33.22:057][ 40]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-11.33.22:057][ 40]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-11.33.22:057][ 40]LogAudioMixer: Display: Channel Order:
+[2019.11.19-11.33.22:057][ 40]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-11.33.22:057][ 40]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-11.33.22:057][ 40]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-11.33.22:057][ 40]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-11.33.22:057][ 40]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-11.33.22:057][ 40]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-11.33.22:057][ 40]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-11.33.22:057][ 40]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-11.33.22:106][ 40]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-11.33.22:107][ 40]LogInit: FAudioDevice initialized.
+[2019.11.19-11.33.22:113][ 40]LogLoad: Game class is 'GameBlueprint_C'
+[2019.11.19-11.33.22:114][ 40]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MovementTest.MovementTest up for play (max tick rate 0) at 2019.11.19-03.33.22
+[2019.11.19-11.33.22:114][ 40]LogWorld: Bringing up level for play took: 0.000333
+[2019.11.19-11.33.22:114][ 40]LogOnline: OSS: Creating online subsystem instance for: :Context_18
+[2019.11.19-11.33.22:116][ 40]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MovementTest 0.377
+[2019.11.19-11.33.34:805][561]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.33.34:807][561]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2019.11.19-11.33.34:827][561]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2019.11.19-11.33.34:827][561]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.33.34:827][561]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.33.34:827][561]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.33.34:827][561]LogWorld: UWorld::CleanupWorld for MovementTest, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-11.33.34:828][561]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.33.34:831][561]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.19-11.33.34:834][561]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.33.34:863][561]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.33.34:867][561]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.33.34:870][561]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
+[2019.11.19-11.33.34:911][564]LogPlayLevel: Display: Destroying online subsystem :Context_18
+[2019.11.19-11.35.07:719][139]LogSelectionDetails: Warning: NavigateToFunctionSource:  Unable to find symbols for 'UMovementComponent::GetMaxSpeed' [The specified module could not be found.]
+[2019.11.19-11.36.04:040][246]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Spaceship-Actor" FILE="../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset" SILENT=true
+[2019.11.19-11.36.04:064][246]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/Spaceship-Actor2BA80FF54C539AE9D0FDF09ADAB5BCEF.tmp' to '../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset'
+[2019.11.19-11.36.04:074][246]AssetCheck: New page: Asset Save: Spaceship-Actor
+[2019.11.19-11.36.04:074][246]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Spaceship-Actor.Spaceship-Actor
+[2019.11.19-11.36.06:664][531]BlueprintLog: New page: Compile Spaceship-Actor
+[2019.11.19-11.36.06:860][531]LogUObjectHash: Compacting FUObjectHashTables data took   3.00ms
+[2019.11.19-11.36.08:674][739]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.19-11.36.08:690][739]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.19-11.36.08:690][739]PIE: New page: PIE session: MovementTest (Nov 18, 2019, 7:36:08 PM)
+[2019.11.19-11.36.08:690][739]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.36.08:691][739]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001367s)
+[2019.11.19-11.36.08:692][739]LogAIModule: Creating AISystem for world MovementTest
+[2019.11.19-11.36.08:692][739]LogPlayLevel: PIE: World Init took: (0.000677s)
+[2019.11.19-11.36.08:692][739]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MovementTest.MovementTest to /Game/Maps/UEDPIE_0_MovementTest.MovementTest (0.002126s)
+[2019.11.19-11.36.08:718][739]LogUObjectHash: Compacting FUObjectHashTables data took   2.96ms
+[2019.11.19-11.36.08:719][739]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-11.36.08:719][739]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-11.36.08:719][739]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-11.36.08:719][739]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-11.36.08:719][739]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-11.36.08:719][739]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-11.36.08:719][739]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-11.36.08:719][739]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-11.36.08:719][739]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-11.36.08:719][739]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-11.36.08:814][739]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-11.36.08:814][739]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-11.36.08:814][739]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-11.36.08:814][739]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-11.36.08:814][739]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-11.36.08:814][739]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-11.36.08:814][739]LogAudioMixer: Display: Channel Order:
+[2019.11.19-11.36.08:814][739]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-11.36.08:814][739]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-11.36.08:814][739]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-11.36.08:814][739]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-11.36.08:814][739]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-11.36.08:814][739]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-11.36.08:814][739]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-11.36.08:814][739]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-11.36.08:864][739]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-11.36.08:865][739]LogInit: FAudioDevice initialized.
+[2019.11.19-11.36.08:869][739]LogLoad: Game class is 'GameBlueprint_C'
+[2019.11.19-11.36.08:870][739]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MovementTest.MovementTest up for play (max tick rate 0) at 2019.11.19-03.36.08
+[2019.11.19-11.36.08:870][739]LogWorld: Bringing up level for play took: 0.000318
+[2019.11.19-11.36.08:870][739]LogOnline: OSS: Creating online subsystem instance for: :Context_19
+[2019.11.19-11.36.08:872][739]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MovementTest 1.133
+[2019.11.19-11.36.15:234][499]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.36.15:238][499]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2019.11.19-11.36.15:257][499]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2019.11.19-11.36.15:258][499]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.36.15:258][499]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.36.15:258][499]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.36.15:258][499]LogWorld: UWorld::CleanupWorld for MovementTest, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-11.36.15:258][499]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.36.15:261][499]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.19-11.36.15:265][499]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.36.15:290][499]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.36.15:294][499]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.36.15:297][499]LogUObjectHash: Compacting FUObjectHashTables data took   2.38ms
+[2019.11.19-11.36.15:339][502]LogPlayLevel: Display: Destroying online subsystem :Context_19
+[2019.11.19-11.36.34:784][235]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Spaceship-Actor" FILE="../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset" SILENT=true
+[2019.11.19-11.36.34:806][235]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/Spaceship-Actor3FC1F77546A90520545786AC605661D6.tmp' to '../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset'
+[2019.11.19-11.36.34:815][235]AssetCheck: New page: Asset Save: Spaceship-Actor
+[2019.11.19-11.36.34:815][235]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Spaceship-Actor.Spaceship-Actor
+[2019.11.19-11.36.39:549][750]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Spaceship-Actor" FILE="../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset" SILENT=true
+[2019.11.19-11.36.39:565][750]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/Spaceship-ActorDA3439154EEEDED5BA5784822717D30C.tmp' to '../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset'
+[2019.11.19-11.36.39:574][750]AssetCheck: New page: Asset Save: Spaceship-Actor
+[2019.11.19-11.36.39:574][750]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Spaceship-Actor.Spaceship-Actor
+[2019.11.19-11.36.54:669][366]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Spaceship-Actor" FILE="../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset" SILENT=true
+[2019.11.19-11.36.54:690][366]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/Spaceship-ActorA17986194709EF2B7EBEFFA4937CADDC.tmp' to '../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset'
+[2019.11.19-11.36.54:699][366]AssetCheck: New page: Asset Save: Spaceship-Actor
+[2019.11.19-11.36.54:699][366]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Spaceship-Actor.Spaceship-Actor
+[2019.11.19-11.36.56:050][498]BlueprintLog: New page: Compile Spaceship-Actor
+[2019.11.19-11.36.56:264][498]LogUObjectHash: Compacting FUObjectHashTables data took   4.21ms
+[2019.11.19-11.36.57:984][690]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.19-11.36.58:000][690]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.19-11.36.58:000][690]PIE: New page: PIE session: MovementTest (Nov 18, 2019, 7:36:58 PM)
+[2019.11.19-11.36.58:000][690]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.36.58:001][690]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001389s)
+[2019.11.19-11.36.58:002][690]LogAIModule: Creating AISystem for world MovementTest
+[2019.11.19-11.36.58:002][690]LogPlayLevel: PIE: World Init took: (0.000744s)
+[2019.11.19-11.36.58:002][690]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MovementTest.MovementTest to /Game/Maps/UEDPIE_0_MovementTest.MovementTest (0.002217s)
+[2019.11.19-11.36.58:033][690]LogUObjectHash: Compacting FUObjectHashTables data took   2.81ms
+[2019.11.19-11.36.58:033][690]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-11.36.58:033][690]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-11.36.58:033][690]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-11.36.58:033][690]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-11.36.58:033][690]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-11.36.58:033][690]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-11.36.58:033][690]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-11.36.58:033][690]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-11.36.58:034][690]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-11.36.58:034][690]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-11.36.58:129][690]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-11.36.58:129][690]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-11.36.58:129][690]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-11.36.58:129][690]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-11.36.58:129][690]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-11.36.58:129][690]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-11.36.58:129][690]LogAudioMixer: Display: Channel Order:
+[2019.11.19-11.36.58:129][690]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-11.36.58:129][690]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-11.36.58:129][690]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-11.36.58:129][690]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-11.36.58:129][690]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-11.36.58:129][690]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-11.36.58:129][690]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-11.36.58:129][690]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-11.36.58:180][690]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-11.36.58:181][690]LogInit: FAudioDevice initialized.
+[2019.11.19-11.36.58:185][690]LogLoad: Game class is 'GameBlueprint_C'
+[2019.11.19-11.36.58:186][690]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MovementTest.MovementTest up for play (max tick rate 0) at 2019.11.19-03.36.58
+[2019.11.19-11.36.58:186][690]LogWorld: Bringing up level for play took: 0.000366
+[2019.11.19-11.36.58:186][690]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2019.11.19-11.36.58:188][690]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MovementTest 0.45
+[2019.11.19-11.37.26:240][ 50]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.37.26:258][ 50]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2019.11.19-11.37.26:278][ 50]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2019.11.19-11.37.26:278][ 50]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.37.26:278][ 50]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.37.26:278][ 50]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.37.26:278][ 50]LogWorld: UWorld::CleanupWorld for MovementTest, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-11.37.26:278][ 50]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.37.26:287][ 50]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.19-11.37.26:291][ 50]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.37.26:319][ 50]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.37.26:323][ 50]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.37.26:326][ 50]LogUObjectHash: Compacting FUObjectHashTables data took   2.40ms
+[2019.11.19-11.37.26:340][ 51]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2019.11.19-11.37.35:320][890]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Spaceship-Actor" FILE="../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset" SILENT=true
+[2019.11.19-11.37.35:343][890]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/Spaceship-Actor35716A134A202E205FDE47BF4267493B.tmp' to '../../../../LostInSpace/LostInSpace/Content/Blueprints/Spaceship-Actor.uasset'
+[2019.11.19-11.37.35:352][890]AssetCheck: New page: Asset Save: Spaceship-Actor
+[2019.11.19-11.37.35:352][890]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Spaceship-Actor.Spaceship-Actor
+[2019.11.19-11.37.37:350][103]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.19-11.37.37:366][103]BlueprintLog: New page: Pre-Play auto-recompile
+[2019.11.19-11.37.37:366][103]LogPlayLevel: [PlayLevel] Compiling Spaceship-Actor before play...
+[2019.11.19-11.37.37:584][103]LogUObjectHash: Compacting FUObjectHashTables data took   3.02ms
+[2019.11.19-11.37.37:585][103]LogPlayLevel: PlayLevel: Blueprint regeneration took 219 ms (1 blueprints)
+[2019.11.19-11.37.37:586][103]PIE: New page: PIE session: MovementTest (Nov 18, 2019, 7:37:37 PM)
+[2019.11.19-11.37.37:586][103]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.37.37:587][103]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001388s)
+[2019.11.19-11.37.37:588][103]LogAIModule: Creating AISystem for world MovementTest
+[2019.11.19-11.37.37:588][103]LogPlayLevel: PIE: World Init took: (0.000734s)
+[2019.11.19-11.37.37:588][103]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MovementTest.MovementTest to /Game/Maps/UEDPIE_0_MovementTest.MovementTest (0.002275s)
+[2019.11.19-11.37.37:616][103]LogUObjectHash: Compacting FUObjectHashTables data took   2.16ms
+[2019.11.19-11.37.37:616][103]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-11.37.37:616][103]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-11.37.37:616][103]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-11.37.37:616][103]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-11.37.37:616][103]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-11.37.37:616][103]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-11.37.37:616][103]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-11.37.37:616][103]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-11.37.37:617][103]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-11.37.37:617][103]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-11.37.37:714][103]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-11.37.37:714][103]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-11.37.37:714][103]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-11.37.37:714][103]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-11.37.37:714][103]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-11.37.37:714][103]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-11.37.37:714][103]LogAudioMixer: Display: Channel Order:
+[2019.11.19-11.37.37:714][103]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-11.37.37:714][103]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-11.37.37:714][103]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-11.37.37:714][103]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-11.37.37:714][103]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-11.37.37:714][103]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-11.37.37:714][103]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-11.37.37:714][103]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-11.37.37:765][103]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-11.37.37:766][103]LogInit: FAudioDevice initialized.
+[2019.11.19-11.37.37:769][103]LogLoad: Game class is 'GameBlueprint_C'
+[2019.11.19-11.37.37:770][103]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MovementTest.MovementTest up for play (max tick rate 0) at 2019.11.19-03.37.37
+[2019.11.19-11.37.37:770][103]LogWorld: Bringing up level for play took: 0.000330
+[2019.11.19-11.37.37:770][103]LogOnline: OSS: Creating online subsystem instance for: :Context_21
+[2019.11.19-11.37.37:772][103]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MovementTest 0.033
+[2019.11.19-11.38.11:188][111]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.38.11:218][111]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2019.11.19-11.38.11:238][111]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2019.11.19-11.38.11:238][111]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.38.11:238][111]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.38.11:238][111]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.38.11:238][111]LogWorld: UWorld::CleanupWorld for MovementTest, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-11.38.11:238][111]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.38.11:242][111]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.19-11.38.11:247][111]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.38.11:277][111]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.38.11:280][111]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.38.11:283][111]LogUObjectHash: Compacting FUObjectHashTables data took   2.29ms
+[2019.11.19-11.38.11:301][112]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2019.11.19-11.38.12:228][220]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MovementTest" FILE="../../../../LostInSpace/LostInSpace/Content/Maps/MovementTest.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2019.11.19-11.38.12:258][220]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2019.11.19-11.38.12:269][220]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/MovementTestE85620C5440C52D9EFA61387497C2770.tmp' to '../../../../LostInSpace/LostInSpace/Content/Maps/MovementTest.umap'
+[2019.11.19-11.38.12:297][220]AssetCheck: New page: Asset Save: MovementTest
+[2019.11.19-11.38.12:297][220]LogContentValidation: Display: Validating World /Game/Maps/MovementTest.MovementTest
+[2019.11.19-11.38.15:258][566]LogTemp: Repeating last play command: Selected Viewport
+[2019.11.19-11.38.15:275][566]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2019.11.19-11.38.15:275][566]PIE: New page: PIE session: MovementTest (Nov 18, 2019, 7:38:15 PM)
+[2019.11.19-11.38.15:275][566]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.38.15:276][566]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001414s)
+[2019.11.19-11.38.15:277][566]LogAIModule: Creating AISystem for world MovementTest
+[2019.11.19-11.38.15:277][566]LogPlayLevel: PIE: World Init took: (0.000826s)
+[2019.11.19-11.38.15:277][566]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MovementTest.MovementTest to /Game/Maps/UEDPIE_0_MovementTest.MovementTest (0.002351s)
+[2019.11.19-11.38.15:306][566]LogUObjectHash: Compacting FUObjectHashTables data took   2.68ms
+[2019.11.19-11.38.15:306][566]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2019.11.19-11.38.15:306][566]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2019.11.19-11.38.15:306][566]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2019.11.19-11.38.15:306][566]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2019.11.19-11.38.15:306][566]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2019.11.19-11.38.15:306][566]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2019.11.19-11.38.15:306][566]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2019.11.19-11.38.15:307][566]LogAudio: Display: AudioDevice MaxSources: 32
+[2019.11.19-11.38.15:307][566]LogAudio: Display: Using built-in audio occlusion.
+[2019.11.19-11.38.15:307][566]LogAudioMixer: Display: Initializing audio mixer.
+[2019.11.19-11.38.15:402][566]LogAudioMixer: Display: Audio Device Output Speaker Info:
+[2019.11.19-11.38.15:402][566]LogAudioMixer: Display: Name: Speakers (Realtek High Definition Audio)
+[2019.11.19-11.38.15:402][566]LogAudioMixer: Display: Is Default: Yes
+[2019.11.19-11.38.15:402][566]LogAudioMixer: Display: Sample Rate: 48000
+[2019.11.19-11.38.15:402][566]LogAudioMixer: Display: Channel Count Used: 8
+[2019.11.19-11.38.15:402][566]LogAudioMixer: Display: Device Channel Count: 8
+[2019.11.19-11.38.15:402][566]LogAudioMixer: Display: Channel Order:
+[2019.11.19-11.38.15:402][566]LogAudioMixer: Display: 0: FrontLeft
+[2019.11.19-11.38.15:402][566]LogAudioMixer: Display: 1: FrontRight
+[2019.11.19-11.38.15:402][566]LogAudioMixer: Display: 2: FrontCenter
+[2019.11.19-11.38.15:402][566]LogAudioMixer: Display: 3: LowFrequency
+[2019.11.19-11.38.15:402][566]LogAudioMixer: Display: 4: BackLeft
+[2019.11.19-11.38.15:402][566]LogAudioMixer: Display: 5: BackRight
+[2019.11.19-11.38.15:402][566]LogAudioMixer: Display: 6: SideLeft
+[2019.11.19-11.38.15:402][566]LogAudioMixer: Display: 7: SideRight
+[2019.11.19-11.38.15:451][566]LogAudioMixer: Display: Using Audio Device Speakers (Realtek High Definition Audio)
+[2019.11.19-11.38.15:453][566]LogInit: FAudioDevice initialized.
+[2019.11.19-11.38.15:460][566]LogLoad: Game class is 'GameBlueprint_C'
+[2019.11.19-11.38.15:461][566]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MovementTest.MovementTest up for play (max tick rate 0) at 2019.11.19-03.38.15
+[2019.11.19-11.38.15:461][566]LogWorld: Bringing up level for play took: 0.000366
+[2019.11.19-11.38.15:461][566]LogOnline: OSS: Creating online subsystem instance for: :Context_22
+[2019.11.19-11.38.15:463][566]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MovementTest -0.276
+[2019.11.19-11.38.42:393][780]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.38.42:397][780]LogAudioMixer: Display: Flush succeeded in the source manager command queue (1).
+[2019.11.19-11.38.42:417][780]LogAudioMixer: Display: Flush succeeded the source manager command queue (2).
+[2019.11.19-11.38.42:418][780]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.38.42:418][780]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_MovementTest
+[2019.11.19-11.38.42:418][780]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.38.42:418][780]LogWorld: UWorld::CleanupWorld for MovementTest, bSessionEnded=true, bCleanupResources=true
+[2019.11.19-11.38.42:419][780]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.38.42:426][780]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2019.11.19-11.38.42:430][780]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2019.11.19-11.38.42:455][780]LogAudioMixer: Display: No commands were queued while flushing the source manager.
+[2019.11.19-11.38.42:458][780]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.11.19-11.38.42:461][780]LogUObjectHash: Compacting FUObjectHashTables data took   2.53ms
+[2019.11.19-11.38.42:500][782]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2019.11.19-11.38.44:207][984]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MovementTest" FILE="../../../../LostInSpace/LostInSpace/Content/Maps/MovementTest.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2019.11.19-11.38.44:238][984]LogUObjectHash: Compacting FUObjectHashTables data took   2.13ms
+[2019.11.19-11.38.44:264][984]LogSavePackage: Moving '../../../../LostInSpace/LostInSpace/Saved/MovementTestC9FF55AA4C1AF5A401431C93DDEDC229.tmp' to '../../../../LostInSpace/LostInSpace/Content/Maps/MovementTest.umap'
+[2019.11.19-11.38.44:292][984]AssetCheck: New page: Asset Save: MovementTest
+[2019.11.19-11.38.44:292][984]LogContentValidation: Display: Validating World /Game/Maps/MovementTest.MovementTest
